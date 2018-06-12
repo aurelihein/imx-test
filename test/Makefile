@@ -21,7 +21,7 @@ ALL_OBJS :=
 
 %.o: %.c
 	@echo "	CC	$@"
-	$(Q)$(CC) -c $(CFLAGS) $< -o $@
+	$(Q)$(CC) -c $(CFLAGS) $(INC) $< -o $@
 
 
 # This creates the build and copy rules for one executable. Because we
